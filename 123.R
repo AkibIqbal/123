@@ -110,7 +110,7 @@ for(i in (2:121)) {
 loanSummary=data.frame(rate=c(0, rep(R,10*12)),balance, interests, capitals)
 loanSummary
 # Answer to the question no. b
-#In order to fill up the target the persons need to save the amount
+# In order to fill up the target the persons need to save the amount
 RA <- 150000/accumulatedValue(i=0.07, n=10)
 RA
 RB <- 120000/accumulatedValue(i=0.06, n=12)
@@ -303,7 +303,7 @@ tp_last <- tpx + tpy - tpxy
 tp_last
 
 #iv
-iv)	# Construct combined table
+# Construct combined table
 cat(sprintf("%-6s  %-12s  %-12s  %-12s  %-14s\n",
             "Year", "tpx", "tpy", "tpxy", "tp(last surv)"))
 for (t in c(0, 1, 5, 10, 15, 20, 25, 30, 40)) {
