@@ -110,7 +110,7 @@ for(i in (2:121)) {
 loanSummary=data.frame(rate=c(0, rep(R,10*12)),balance, interests, capitals)
 loanSummary
 # Answer to the question no. b
-In order to fill up the target the persons need to save the amount
+#In order to fill up the target the persons need to save the amount
 RA <- 150000/accumulatedValue(i=0.07, n=10)
 RA
 RB <- 120000/accumulatedValue(i=0.06, n=12)
