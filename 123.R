@@ -103,9 +103,9 @@ balance[1]=Capital
 interests[1]=0
 capitals[1]=0
 for(i in (2:121)) {
-balance[i]=balance[i-1]*(1+monthlyInt)-R
-interests[i]=balance[i-1]*monthlyInt
-capitals[i]=R-interests[i]
+  balance[i]=balance[i-1]*(1+monthlyInt)-R
+  interests[i]=balance[i-1]*monthlyInt
+  capitals[i]=R-interests[i]
 }
 loanSummary=data.frame(rate=c(0, rep(R,10*12)),balance, interests, capitals)
 loanSummary
@@ -165,7 +165,7 @@ i_a=(1+(r/m))^m-1
 i_a
 # in percentage
 i_a*100
-		
+
 # Answer to the question e
 P=1000
 i=.03
@@ -305,11 +305,11 @@ tp_last
 #iv
 iv)	# Construct combined table
 cat(sprintf("%-6s  %-12s  %-12s  %-12s  %-14s\n",
-    "Year", "tpx", "tpy", "tpxy", "tp(last surv)"))
+            "Year", "tpx", "tpy", "tpxy", "tp(last surv)"))
 for (t in c(0, 1, 5, 10, 15, 20, 25, 30, 40)) {
   if (t > n) next
   cat(sprintf("%-6d  %-12.6f  %-12.6f  %-12.6f  %-14.6f\n",
-      t, tpx[t + 1], tpy[t + 1], tpxy[t + 1], tp_last[t + 1]))
+              t, tpx[t + 1], tpy[t + 1], tpxy[t + 1], tp_last[t + 1]))
 }
 
 
